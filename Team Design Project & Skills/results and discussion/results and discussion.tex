@@ -1,0 +1,22 @@
+\chapter{Evaluation\label{chap5}}
+This project is aimed at integrating a multifunctional intelligent rover that can perform specific tasks. This chapter of the report attempts to evaluate whether this integration of the system is successful from five perspectives. Some evaluation has been made in the subsystem design and is not repeated in this chapter.
+
+\section{Moving Speed}
+In the final demonstration, we are required to finish the simulation within 10 minutes. We manage to shorten this into around 3 minutes with a wheel velocity of 35 rad/s. Even though our rover moves pretty fast, we optimize our control algorithm to prevent it from overshooting around the corner. We also apply the mulitprocessing to let the visual, decision and chassis processes work in a parallel way. This saves the time to wait for the output of the last process, which  occurs frequently in the series processing.
+
+\section{Operating Efficiency}
+We have considered the operating efficiency of the program as an important point of our design. In particular, we optimize each algorithm of us with respect to the time-complexity and space-complexity. Taking the color filtering algorithm as an example, the initial design follows the common practice of finding the contours of each color in OpenCV and then making a summation of the contour areas. During our analysis, we find that this method is too redundant. We simplify our algorithm by summing all the areas with an intensity higher than a certain threshold. On top of this, we also notice that using too many sensors will bring down our simulation speed. This is because initializing sensors in Webots consumes a large amount of time. For simplicity, we provide an easy solution with two cameras and one distance sensor only. As a result, our program is of light weight ang high operating efficiency.
+
+\section{Comprehensive State Machine}
+Our rover is not restricted to follow a specific routine to finish all the tasks due to the comprehensive state machine. In fact, it can start from any spot in from the Task 1 to the Task 5. For example, if we want to test whether our solution to Task 5 work or not, we can simply set the starting point of our rover at the end of Task 4. Even though it does not cross the bridge or gate, our color filtering and path finding algorithms can still operate normally.
+
+\section{Complete Encapsulation}
+During the development of our rover, we make a complete encapsulation of our program. In other words, each group can directly test its code without interfering the work of other groups. For example, the Visual Group can test its path finding algorithm within the visual program while the Chassis Group can also run the PID control algorithm within the chassis program. Their codes are independent of each other. Finally, codes from different groups are imported and integrated in the controller program to make the rover run properly.
+
+\section{Excellent Project Management}
+Since this is a team design project, the management performance is evaluated here. With the assistance of project planning techniques, such as SoW, WBS and the Gantt Chart, we manage the project successfully, finishing all the tasks one week ahead of the deadline. We make a clear division of work at the very beginning of the project. Thus, every member in our team contributes a lot to our system designing. What's more, we base our project development on ZenHub and GitHub, leading to the tight cooperation among team members.
+
+However, as it is our first time to do the project management, we still make some mistakes, which could be avoided next time with this experience. For example, we do not realize the necessity to write down a summary of each meeting. Some team members could only watch the recording to review the contents, which is a waste of time.
+
+
+

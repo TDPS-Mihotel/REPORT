@@ -1,0 +1,61 @@
+\documentclass[a4paper, twoside]{report}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{booktabs}
+% \usepackage{tabularx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{url}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{indentfirst}
+
+\title{Multifunctional Rover Design on Webots}
+\author{Team 32 - Mihotel}
+% Update supervisor and other title stuff in title/title.tex
+\setlength{\marginparwidth}{2cm}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}} 
+% \setlength{\parindent}{0pt}
+
+\begin{document}
+\input{title/title.tex}
+
+\begin{abstract}
+This report is a comprehensive summary of our team designed multifunctional rover. Our rover is endowed with a wide range of features, including color recognition, path patrol, object detection, item releasing and so on. During the project development, we adopt an interactive designing strategy with a joint effort of the visual, decision and chassis groups. Our final design is able to finish the five specific tasks in a stable and efficient way. To promote work efficiency, we also employ the project management skills and base our work on two professional team development platforms, ZenHub and GitHub.
+We open-source our project to the community for further research\footnote{https://github.com/TDPS-Mihotel/Mihotel}.
+\end{abstract}
+
+\renewcommand{\abstractname}{Acknowledgements}
+\begin{abstract}
+
+This project is a joint effort of the Team 32 and we would like to acknowledge the contribution of our all members in our team. In particular, we would like to thank our team leader Zhuheng SONG for his time, patience and guidance. We would also like to thank our project manager Jinwei CHU for his excellent project management.
+
+The Mihotel Rover is designed and developed online and we would like to thank Cyberbotics Webots, GitHub and ZenHub for their technical support. Also, we are grateful to Dr.Wasim Ahmad and Dr. Abdullah Al-Khalidi for delivering the course to us.
+\end{abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\input{introduction/introduction.tex}
+\input{overview/overview}
+\input{management/management}
+\input{implementation/implementation}
+\input{results and discussion/results and discussion}
+\input{conclusion/conclusion.tex}
+\input{appendix/appendix.tex}
+
+\bibliographystyle{ieeetr}
+\bibliography{bibs/sample}
+
+\end{document}

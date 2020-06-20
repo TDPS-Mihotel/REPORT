@@ -1,0 +1,23 @@
+\chapter{Introduction\label{chap1}}
+This document is a report for the team design project "Multifunctional Rover Design on Webots", which is part of the course Team Design Project and Skills\footnote{The TDPS course is available at: https://moodle.gla.ac.uk/course/view.php?id=14648\label{course_website}}. In this course, our team is assigned with the design of an integrated electronic and electrical system that is capable of performing specific functions. In particular, we need to design and construct a line-patrol rover and finish five given tasks. This project is purely simulation-based with the Cyberbotics Webots\footnote{The Cyberbotics Webots can be accessed from: https://cyberbotics/com/}.
+
+During this project, we not only focus on the development of electronic and electrical systems, but also regard it as an excellent chance to put the project management skills learned in the course Engineering Project Management and Finance\footnote{The EPMF course is available at:https://moodle.gla.ac.uk/course/view.php?id=18377} into practice. To be specific, we follow the guidelines of the project planning, employing useful project management tools and techniques to promote the work efficiency. We also explore some widely-used team development applications, including ZenHub and GitHub to facilitate our work.
+
+\section{Aims \& Objectives of the Project}
+In this report, we limit the scope to the design of the multifunctional rover, although it can be generalized to other electronic and electric system design tasks easily. The goal of our project is to develop a multifunctional intelligent line-patrol rover named \textbf{Mihotel Rover}. It is endowed with the following features: 
+\begin{itemize}
+    \item Autonomous driving - No external instructions needed to control the rover
+    \item Colored path patrol - Capable of finding and following the path of black lines or lines with specific colors
+    \item Object detection - Capable of recognizing the bridge over the river and the arch
+    \item Color recognition - Capable of detecting the color of beacons and the color box 
+    \item Items Releasing - Capable of dropping the fish food on the orange fish tank
+    \item Uphill \& downhill moving - Capable of going up and down the bridge along the ramps
+    \item Omnidirectional rotation - Capable of making a turn in any direction at any spot
+\end{itemize}
+
+However, since we design the rover using Webots simulation, our implementation cannot be the same as the rover designed in reality. We will return to the limitations in Section \ref{future_work}.
+
+\section{Background Research}
+Robots can be autonomous or semi-autonomous machines that simulate human behavior or thoughts and other creatures (such as robot dogs, robot cats, etc.)\cite{wiki}. The intelligent robot can not only perceive the environment, but also think and judge to make reactive actions. Nowadays, intelligent robots can be used in industry, agriculture, medical treatment, military, and other fields. \cite{kim2014robot} It reduces the risk of people's work and brings many conveniences, so as to improve people's quality of life. Therefore, intelligent robot is one of the hot spots of scientific research. Common products in the market are: UAV, sweeping robot and smart home. In our project, we try to make robots complete certain tasks and become intelligent to some extent. Due to the impact of the COVID-19, the overall design changed from hardware to Webots simulation. The overall completion process is also different from the traditional intelligent robot design.\\
+
+The remainder of this report is organized as follows: first, an overview of the project, including detailed description of tasks and the design workflow, is given in Chapter \ref{chap2}; then, we discuss our project management skills in Chapter \ref{chap3} ; next, the subsystem design is introduced in Chapter \ref{chap4} from five scopes; Chapter \ref{chap5} is about the evaluation of the integrated system; finally, we discuss future research directions, together with a conclusion in Chapter \ref{chap6}. Other information, including the details of individual contribution can be found in the appendices.
