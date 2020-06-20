@@ -1,2 +1,2 @@
 # REPORT
-We use LaTeX to write the report
+Our final report, together with the latex document, has been uploaded!
